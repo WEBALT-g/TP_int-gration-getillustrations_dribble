@@ -13,6 +13,27 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/**** button style ****/
+
+form.btn_style a {
+    background-color: #ffcc33;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 13px;
+}
+
+form:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+form.btn_style a {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
 /**** header ****/
 
 header {
@@ -22,6 +43,7 @@ header {
     align-content: center;
     flex-wrap: wrap;
 }
+
 
 .logo img {
     padding: 30px 30px;
@@ -34,6 +56,8 @@ header {
 
 nav.navbar {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 30px 30px;
     font-size: 14px;
     font-weight: 400;
@@ -57,23 +81,6 @@ nav.navbar ul li a:hover {
     transition: 0.3s;
 }
 
-form.btn_style a {
-    background-color: #ffcc33;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 13px;
-}
-
-form:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-}
-
-form.btn_style a {
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
 
 /**** article ****/
 
@@ -84,7 +91,8 @@ article {
 }
 
 .img_left img {
-    width: 700px;
+    max-width: 700px;
+    width: auto;
 }
 
 .content_right {
@@ -203,4 +211,28 @@ footer ul li a:hover {
     color: #edb633;
     text-decoration: underline;
     transition: 0.3s;
+}
+
+@media screen and (max-width: 1250px) {
+    article {
+       display: block;
+       width: 100%;
+    }
+    .img_left {
+        display: flex;
+        justify-content: center;
+    }
+    .img_left img {
+        max-width: 50%;
+    }
+    header {
+        justify-content: center;
+    }
+    .content_right {
+        margin: 0px 50px;
+        text-align: center;
+    }
+    .contact_support {
+        display: block;
+    }
 }
