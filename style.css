@@ -223,7 +223,7 @@ footer ul li a:hover {
         justify-content: center;
     }
     .img_left img {
-        max-width: 50%;
+        max-width: 60%;
     }
     header {
         justify-content: center;
@@ -234,5 +234,59 @@ footer ul li a:hover {
     }
     .contact_support {
         display: block;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .logo {
+        padding: 0px 15px;
+    }
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        padding: 20px 0px;
+    }
+    nav.navbar {
+        display: flex;
+        padding: 0px 15px;
+    }
+    nav.navbar ul li {
+        margin: 10px;
+        text-align: center;
+    }
+    nav.navbar ul li a {
+        margin: 0px ;
+    }
+    nav.navbar form.btn_style {
+        margin: 30px 0px;
+        z-index: 3;
+    }
+    .img_left img {
+        max-width: 80%;
+    }
+    article form.btn_style {
+        margin-bottom: 40px;
+        z-index: 3;
+    }
+    #illu_1 {
+        max-width: 100%;
+    }
+    footer ul li {
+        margin: 10px 20px;
+    }
+    footer ul li a {
+        margin: 0px;
+    }
+    footer ul.link {
+        padding: 0px 15px;
+    }
+    footer p {
+        margin-top: 20px;
     }
 }
